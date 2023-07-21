@@ -1,0 +1,32 @@
+div{
+  .headline{
+    &:hover{
+      background: radial-gradient(circle farthest-side at 500px 100px, blue 0%, coral 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  
+}
+
+span{
+  font-size: 98px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  color: grey;
+
+  // &:hover{
+  //   background: linear-gradient(90deg, lightblue 20%, coral 40%, coral 60%, lightblue 80%);
+  //   background-size: 200% auto;
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   // transition: color 6s;
+  //   animation: shine 2s linear infinite;
+  //   @keyframes shine {
+  //     to {
+  //       background-position: 200% center;
+  //     }
+  //   }
+  // }
+}
