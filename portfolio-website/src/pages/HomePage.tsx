@@ -1,29 +1,29 @@
+
 import "./Homepage.scss";
+import Header from "../components/Header"
 
-const headlineOne = "FULL";
-const headlineTwo = "STACK";
-const headlineThree = "DEVELOPER";
 
-function Homepage() {
+export default function Homepage() {
+
   return (
     <>
-      <div className="headline">
-        {headlineOne.split("").map((h) => {
-          return <span>{h}</span>;
-        })}
+      <div className="info">
+        <span className="name">Lok Sze<br />Chung</span>
       </div>
-      <div className="headline">
-        {headlineTwo.split("").map((h) => {
-          return <span>{h}</span>;
-        })}
+      <div className="hero">
+        <div className="hero-title-top">
+          <Header heading={'full  —  stack'} />
+          {/* <Header heading={'stack'} /> */}
+        </div>
+        <div className="hero-title-bottom">
+          <Header heading={'developer'}/>
+        </div>
       </div>
-      <div className="headline">
-        {headlineThree.split("").map((h) => {
-          return <span>{h}</span>;
-        })}
+      
+      <div className="nav">
+        {/* <Header heading={'developer'} /> */}
       </div>
     </>
   );
 }
 
-export default Homepage;
