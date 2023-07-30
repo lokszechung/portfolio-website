@@ -15,6 +15,16 @@
   src: url('./assets/fonts/SuisseWorks-Regular.ttf');
 }
 
+@font-face{
+  font-family: OpenSauceSans-Regular;
+  src: url('./assets/fonts/Open-Sauce-Sans/OpenSauceSans-Regular.ttf');
+}
+
+@font-face{
+  font-family: OpenSauceSans-Light;
+  src: url('./assets/fonts/Open-Sauce-Sans/OpenSauceSans-Light.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;

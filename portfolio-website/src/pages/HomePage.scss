@@ -2,15 +2,40 @@
 body{
   background-color: rgb(23, 23, 23);
   height: 100vh;
+  font-family: "OpenSauceSans-Regular";
 }
 
 .info{
-  background-color: red;
+  // background-color: darkblue;
   height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
 
   .name{
-    font-family: "SuisseWorks-Regular"
+    font-family: "OpenSauceSans-Regular";
+    color: #808080;
+    text-shadow: 0 0 5px #505050;
+    font-size: 20px;
   }
+
+  .time{
+    position: relative;
+    svg{
+      width: 110px;
+    }
+    .live-time{
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
 }
 .hero{
   margin-left: 2vw;
@@ -21,7 +46,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  // background-color: blue;
+  // background-color: rgb(68, 68, 182);
   height: 38vh;
 
   .headline-full-stack{
@@ -31,8 +56,22 @@ body{
   }
 }
 .hero-title-bottom {
-  // background-color: orange;
+  // background-color: rgb(133, 166, 177);
   height: 38vh;
+  display: flex;
+  flex-direction: row;
+
+  .intro{
+    color: #808080;
+    height: 15vw;
+    margin-left: 40px;
+    margin-right: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2vw;
+  }
 }
 .nav{
   background-color: pink;

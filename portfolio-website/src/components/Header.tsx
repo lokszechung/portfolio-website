@@ -8,18 +8,12 @@ interface HeaderProps {
 export default function Header({ heading }: HeaderProps): JSX.Element {
 
   let headingClass = heading
-  // let headingToReturnOne
-  // let headingToReturnTwo
 
 
   if (heading.includes("  —  ")) {
     headingClass = heading.replace("  —  ", "-")
   }
 
-  // if (heading.includes(" - ")) {
-  //   headingToReturnOne = heading.split(" - ")[0]
-  //   headingToReturnTwo = heading.split(" - ")[1]
-  // }
   
   const headRef = useRef<HTMLDivElement>(null);
   const [headPos, setHeadPos] = useState({ x: 0, y: 0 });

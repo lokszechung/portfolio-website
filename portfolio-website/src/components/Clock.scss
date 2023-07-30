@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+.separator{
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+span.hour, span.minute, span.separator, span.zone{
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+}
