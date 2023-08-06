@@ -1,0 +1,36 @@
+.nav-container{
+  position: absolute;
+  bottom: 0;
+  font-family: "OpenSauceSans-Regular";
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+// svg{
+//   margin: 0 auto;
+// }
+
+.navbar{
+  width: 520px;
+  height: 30px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // background-color: lightgrey;
+}
+
+li{
+  padding-top: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .link{
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
